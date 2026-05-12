@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="navigation-bar">
+            <nav>
+                <ul style="list-style-type: none">
+                    <li><a href="#home">Homepage</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="home" class="hidden">
+            <img id="myPhoto" src="assets/myphoto.jpeg" alt="My Photo">
+            <h1>Muhammad Ammar Rashid</h1>
+            <h3>Full-Stack Web Development Intern | Aspiring Software Developer</h3>
+
+            <div class="information-box">
+                <p>I am an undergraduate student currently pursuing a Bachelor's degree in Computing
+                    and Information Technologies. Throughout my undergraduate program, I have worked
+                    with various programming language, such as Python, Java, HTML, CSS, JavaScript, etc.
+                    Among all the numerous domains of the computing world, I am particularly interested in developing web applications and software.</p>
+                </p>
+                <button id="viewCV-button"><a href="assets/MyCV.pdf" target="_blank">View My CV</a></button>
+                <a href="https://www.linkedin.com/in/muhammad-ammar-rashid" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></a></i>
+                <a href="https://github.com/mar9251/Muhammad-Ammar-Rashid-s-Personal-Git-Repository" target="_blank"><i class="fa-brands fa-github fa-2x"></a></i>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mammarr4220@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a> <!-- Fix -->
+                <i id="change-mode" class="fa-regular fa-lightbulb fa-2x"></i>
+            </div>
+
+        </div>
+
+        <!-- Home content to be fixed and finished later -->
+
+        <div class="main-content hidden">
+            <div id="about">
+                <h1 class="section-headline">About Me</h1>
+                <h2>Skills</h2>
+                <!-- Grid display of skills -->
+                <div class="skill-container">
+                    <div id="skill1">
+                        <i class="fa-brands fa-python fa-4x"></i>
+                        <p><strong>Python</strong></p>
+                    </div>
+
+                    <div id="skill2">
+                        <i class="fa-brands fa-html5 fa-4x"></i>
+                        <p><strong>HTML5</strong></p>
+                    </div>
+
+                    <div id="skill3">
+                        <i class="fa-brands fa-css3-alt fa-4x"></i>
+                        <p><strong>CSS3</strong></p>
+                    </div>
+
+                    <div id="skill4">
+                        <i class="fa-brands fa-js fa-4x"></i>
+                        <p><strong>JavaScript</strong></p>
+                    </div>
+                </div>
+
+                <br />
+                <h2>Certifications</h2>
+
+                <div class="certification-container">
+                    <div id="certificate1">
+                        <h3>The Complete Python Bootcamp: From Zero to Hero In Python</h3>
+                        <p>Type:</p>
+                        <h4>Course Completion Certificate</h4>
+                        <br />
+                        <button id="viewCertificate-button"><a href="assets/python-certificate.jpg">View Certificate</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects" class="hidden">
+                <h1 class="section-headline">Projects</h1>
+                <div class="project-container">
+                    <div id="project1" class="full-height">
+                        <h3>AutoTurtle</h3>
+                        <p><strong>Tech Stack: Python</strong></p>
+                        <p class="descriptions">This program leverages Python's built-in Turtle module to allow user interactivity, enabling users to manipulate Turtle commands 
+                            based on their preferences. Users can choose attributes such as background color, pen color, pen size, font, font size, and font style (bold, italics,
+                            underline).</p>
+                        <br />
+                        <p class="descriptions">After selecting these options, users are prompted to enter text, which is then displayed on the Turtle canvas with their assigned
+                             attributes using turtle.write(). A while loop enables repeated use, clearing the canvas after each run, so users can start fresh if they choose to 
+                             run the program again.</p>
+                        <br />
+                        <p class="descriptions">Default values are provided for each attribute if the user does not input a custom option. Error handling ensures that the user is
+                             prompted to enter only valid responses ("Yes" or "No") when deciding to rerun the program.</p>
+                    </div>
+
+                    <div id="project2" class="full-height">
+                        <h3>PortfolioBase+</h3>
+                        <p><strong>Tech Stack: HTML, CSS</strong></p>
+                        <p class="descriptions">A custom-built, multi-page portfolio website designed to showcase technical skills, certifications, and project experience. 
+                            The site was developed using semantic HTML and modern CSS, featuring a clean and professional design.</p>
+                        <br />
+                        <p class="descriptions">It includes a 3-page structure (Home, About Me, Projects) with consistent navigation, a responsive layout built using CSS Flexbox,
+                             and custom UI components such as a navigation bar and styled content boxes with hover effects. Interactive elements across the site improve user 
+                             experience by providing visual feedback and enhancing engagement.</p>
+                    </div>
+
+                    <div id="project3" class="full-height">
+                        <h3>Professional Portfolio Website</h3>
+                        <p><strong>Tech Stack: HTML, CSS, JavaScript, Node.js, Express.js</strong></p>
+                        <p class="descriptions">Hello</p>
+                    </div>
+
+                    <button id="project-description">View Project Descriptions</button>
+                </div>
+            </div>
+
+            <div id="contact" class="hidden">
+                <h1 class="section-headline">Contact Me</h1>
+
+                <div id="contact-form">
+                    <form>
+                        <label for="name"><strong>Your Name:</strong></label><br />
+                        <input type="text" id="name" name="name" placeholder="Name"><br /><br />
+
+                        <label for="email"><strong>Your Email:</strong></label><br />
+                        <input type="email" id="email" name="email" placeholder="Email"><br /><br />
+
+                        <label for="message"><strong>Your Message:</strong></label><br />
+                        <textarea id="message" name="message" placeholder="Message..."></textarea><br /><br />
+
+                        <button id="form-button" type="submit">Submit Form</button>
+                    </form>
+                    <p id="responseMessage"></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="index.js"></script>
+</html>
+
+<!-- Navigation bar background color: #24345A -->
+<!-- Body background color: #34447A -->
+<!-- Container background colors: #152241-->
+<!-- Font color: #F2C94C-->
